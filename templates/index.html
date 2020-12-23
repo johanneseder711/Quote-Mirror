@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    window.setInterval('refresh()', 10000);
+
+    // Refresh or reload page.
+    function refresh() {
+        window .location.reload();
+    }
+</script>
+ <style>
+    .content {
+      background: black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+    }
+  </style>
+
+</head>
+   <body style="background-color:black;">
+      <div style="color:white" class="content">
+        <p style="font-size:40px">{{quote}}</p>
+        <p style="font-size:30px"><em>{{author}}</em></p>
+      </div>
+   </body>
+</html>
