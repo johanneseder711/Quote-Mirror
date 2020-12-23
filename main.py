@@ -10,9 +10,9 @@ def home():
     author = []
     with open('Lebensweisheiten.txt') as f:
         for line in f.readlines():
-            if line != '\n':
-                sentence = line.strip()
-                if sentence.startswith('„'):
+            sentence = line.strip()
+            if len(sentence) != 0:
+                if '"' in sentence:
                     quote.append(sentence)
                 else:
                     author.append(sentence)
